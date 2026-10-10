@@ -8,7 +8,14 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://YOUR-VERCEL-URL.vercel.app",
+      "http://localhost:5173",
+    ],
+  })
+);
 app.use(express.json({ limit: "12mb" }));
 
 // ---------- Gemini setup ----------
