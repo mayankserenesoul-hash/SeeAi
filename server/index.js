@@ -11,7 +11,9 @@ const PORT = process.env.PORT || 3001;
 app.use(
   cors({
     origin: [
-      "https://YOUR-VERCEL-URL.vercel.app",
+      "https://see-ai-six.vercel.app",
+      "https://see-ai-mayankserenesoul-hash.vercel.app",
+      "https://see-ai-git-main-mayankserenesoul-hash.vercel.app",
       "http://localhost:5173",
     ],
   })
